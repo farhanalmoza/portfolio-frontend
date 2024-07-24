@@ -1040,11 +1040,13 @@ body.light-theme {
   }
 
   .experiences__container {
-    grid-template-columns: repeat(3, 192px);
+    grid-template-columns: repeat(3, 1fr);
     column-gap: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
   .experiences__card {
-    padding: 5rem 2rem 1.5rem;
+    padding: 3rem 2rem 1.5rem;
   }
 
   .work__container {
