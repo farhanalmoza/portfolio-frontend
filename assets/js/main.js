@@ -114,3 +114,42 @@ const sr = ScrollReveal({
 sr.reveal(`.home__data`)
 sr.reveal(`.home__handle`, {delay: 700})
 sr.reveal(`.home__social, .home__scroll`, {delay: 900, origin: 'bottom'})
+
+/*=============== FOOTER YEAR ===============*/
+document.getElementById('footer-year').textContent = new Date().getFullYear();
+
+/*=============== CONTACT FORM (EMAILJS) ===============*/
+// Replace these with your own EmailJS credentials from https://dashboard.emailjs.com/
+const EMAILJS_PUBLIC_KEY = 'T1Y7x0WXTinmzmdIi';
+const EMAILJS_SERVICE_ID = 'service_7waz4z8';
+const EMAILJS_TEMPLATE_ID = 'template_d2memv4';
+
+emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
+
+const contactForm = document.getElementById('contact-form');
+const contactFormStatus = document.getElementById('contact-form-status');
+const contactFormButton = contactForm.querySelector('button[type="submit"]');
+const contactFormButtonDefaultText = contactFormButton.textContent;
+
+contactForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    contactFormButton.disabled = true;
+    contactFormButton.textContent = 'Sending...';
+    contactFormStatus.className = 'contact__form-status';
+
+    emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, contactForm)
+        .then(() => {
+            contactFormStatus.textContent = 'Message sent successfully!';
+            contactFormStatus.className = 'contact__form-status contact__form-status--success';
+            contactForm.reset();
+        })
+        .catch(() => {
+            contactFormStatus.textContent = 'Something went wrong. Please try again or email me directly.';
+            contactFormStatus.className = 'contact__form-status contact__form-status--error';
+        })
+        .finally(() => {
+            contactFormButton.disabled = false;
+            contactFormButton.textContent = contactFormButtonDefaultText;
+        });
+});

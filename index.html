@@ -10,13 +10,44 @@
         <!--=============== BOXICONS ===============-->
         <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
 
-        <!--=============== SWIPER CSS ===============-->
-        <link rel="stylesheet" href="">
-
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="assets/css/styles.css">
 
         <title> Farkhan | Portfolio Website </title>
+
+        <!--=============== META ===============-->
+        <meta name="description" content="Farkhan is a frontend developer specializing in React and React Native, with hands-on full-stack experience.">
+        <meta name="robots" content="index, follow">
+        <link rel="canonical" href="https://farkhan.vercel.app/">
+
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://farkhan.vercel.app/">
+        <meta property="og:title" content="Farkhan | Portfolio Website">
+        <meta property="og:description" content="Frontend developer specializing in React and React Native, with hands-on full-stack experience.">
+        <meta property="og:image" content="https://farkhan.vercel.app/assets/img/perfil.png">
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Farkhan | Portfolio Website">
+        <meta name="twitter:description" content="Frontend developer specializing in React and React Native, with hands-on full-stack experience.">
+        <meta name="twitter:image" content="https://farkhan.vercel.app/assets/img/perfil.png">
+
+        <!--=============== STRUCTURED DATA ===============-->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Farkhan",
+            "url": "https://farkhan.vercel.app/",
+            "image": "https://farkhan.vercel.app/assets/img/perfil.png",
+            "jobTitle": "Frontend Developer",
+            "sameAs": [
+                "https://www.linkedin.com/in/farkhan-farkhan-8b2120171/",
+                "https://github.com/farhanalmoza",
+                "https://medium.com/@farhanalmoza",
+                "https://www.instagram.com/_faarkhan/"
+            ]
+        }
+        </script>
     </head>
     <body>
         <!--=============== HEADER ===============-->
@@ -67,7 +98,7 @@
 					<div class="home__data">
 						<span class="home__greeting">Hello, I'm</span>
 						<h1 class="home__name">Farkhan</h1>
-						<h3 class="home__education">Web Developer</h3>
+						<h3 class="home__education">Frontend Developer</h3>
 
 						<div class="home__buttons">
 							<a download="" href="assets/pdf/Farkhan-CV.pdf" class="button button--ghost">
@@ -78,7 +109,7 @@
 					</div>
 
 					<div class="home__handle">
-						<img src="assets/img/perfil.png" alt="" class="home__img">
+						<img src="assets/img/perfil.png" alt="Farkhan" class="home__img">
 					</div>
 
 					<div class="home__social">
@@ -106,7 +137,7 @@
 				<h2 class="section__title">About Me</h2>
 
 				<div class="about__container container grid">
-					<img src="assets/img/about.jpg" alt="" class="about__img">
+					<img src="assets/img/about.jpg" alt="Farkhan at work" class="about__img">
 
 					<div class="about__data">
 						<!-- <div class="about__info">
@@ -128,9 +159,10 @@
 						</div> -->
 
 						<p class="about__description">
-							I have a strong passion and quite experienced in Machine Learning and website development.
-							With my passion and experience in this field, I'm sure I can make a significant contribution
-							to machine learning projects and website development in the future.
+							I'm currently focused on frontend development, building responsive and performant user
+							interfaces for both web and mobile with React and React Native. I also bring hands-on
+							backend experience, which helps me collaborate effectively across the full stack and
+							deliver well-rounded solutions.
 						</p>
 
 						<a href="#contact" class="button">Contact Me</a>
@@ -145,7 +177,7 @@
 
 				<div class="skills__container container grid">
 					<div class="skills__content">
-						<h3 class="skills__title">Frontend Web</h3>
+						<h3 class="skills__title">Frontend</h3>
 
 						<div class="skills__box">
 							<div class="skills__group">
@@ -172,6 +204,13 @@
 							</div>
 
 							<div class="skills__group">
+								<div class="skills__data">
+									<i class="bx bxs-badge-check"></i>
+									<div>
+										<h3 class="skills__name">React Native</h3>
+									</div>
+								</div>
+
 								<div class="skills__data">
 									<i class="bx bxs-badge-check"></i>
 									<div>
@@ -246,6 +285,7 @@
 				<div class="experiences__container container grid">
 					<div class="experiences__card">
 						<h3 class="experiences__title">CIPTA IT Developer</h3>
+						<span class="experiences__subtitle">CIMB NIAGA &middot; Feb 2025 - Now</span>
 
 						<span class="experiences__button">
 							See more <i class="bx bx-right-arrow-alt experiences__icon"></i>
@@ -284,6 +324,7 @@
 
 					<div class="experiences__card">
 						<h3 class="experiences__title">Junior Software Engineer</h3>
+						<span class="experiences__subtitle">Luminette Group &middot; Aug 2023 - May 2024</span>
 
 						<span class="experiences__button">
 							See more <i class="bx bx-right-arrow-alt experiences__icon"></i>
@@ -327,6 +368,7 @@
 
 					<div class="experiences__card">
 						<h3 class="experiences__title">Head of Research and Development</h3>
+						<span class="experiences__subtitle">BEM FASILKOM UPN "Veteran" Jatim &middot; May 2022 - May 2023</span>
 
 						<span class="experiences__button">
 							See more <i class="bx bx-right-arrow-alt experiences__icon"></i>
@@ -355,6 +397,7 @@
 
 					<div class="experiences__card">
 						<h3 class="experiences__title">Staff of Education Department</h3>
+						<span class="experiences__subtitle">HIMATIFA UPN "Veteran" Jatim &middot; Apr 2021 - Mar 2022</span>
 
 						<span class="experiences__button">
 							See more <i class="bx bx-right-arrow-alt experiences__icon"></i>
@@ -380,40 +423,12 @@
 							</div>
 						</div>
 					</div>
-
-					<div class="experiences__card">
-						<h3 class="experiences__title">Network Opeartion Center</h3>
-
-						<span class="experiences__button">
-							See more <i class="bx bx-right-arrow-alt experiences__icon"></i>
-						</span>
-
-						<div class="experiences__modal">
-							<div class="experiences__modal-content">
-								<i class="bx bx-x experiences__modal-close"></i>
-
-								<h3 class="experiences__modal-title">Network Opeartion Center</h3>
-								<p class="experiences__modal-description">
-									January 2019 - April 2019 <br>
-									Adiva Network
-								</p>
-
-								<ul class="experiences__modal-list">
-									<li class="experiences__modal-item">
-										<p class="experiences__modal-info">
-											Creating and developing the Fasilkom Fest web application.
-										</p>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
 				</div>
             </section>
 
             <!--=============== WORK ===============-->
             <section class="work section" id="work">
-                <span class="section__subtitle">My Portfoliio</span>
+                <span class="section__subtitle">My Portfolio</span>
 				<h2 class="section__title">Recent Works</h2>
 
 				<div class="work__filters">
@@ -425,7 +440,7 @@
 
 				<div class="work__container container grid">
 					<div class="work__card mix web"> <!-- Beri kelas di sini untuk kategorisasi -->
-						<img src="assets/img/project-thumbnail/pokemon-mcorp-thumbnail.png" alt="" class="work__img">
+						<img src="assets/img/project-thumbnail/pokemon-mcorp-thumbnail.png" alt="Pokemon Corp project screenshot" class="work__img">
 							<h3 class="work__title">Pokemon Corp</h3>
 
 						<div class="work__link">
@@ -439,7 +454,7 @@
 					</div>
 
 					<div class="work__card mix web"> <!-- Beri kelas di sini untuk kategorisasi -->
-						<img src="assets/img/landing-page-sby-dev.png" alt="" class="work__img">
+						<img src="assets/img/landing-page-sby-dev.png" alt="Landing Page Surabaya Dev project screenshot" class="work__img">
 							<h3 class="work__title">Landing Page Surabaya Dev</h3>
 
 						<div class="work__link">
@@ -453,7 +468,7 @@
 					</div>
 
 					<div class="work__card mix web"> <!-- Beri kelas di sini untuk kategorisasi -->
-						<img src="assets/img/sipinjam.png" alt="" class="work__img">
+						<img src="assets/img/sipinjam.png" alt="Sistem Informasi Peminjaman Buku project screenshot" class="work__img">
 							<h3 class="work__title">Sistem Informasi Peminjaman Buku</h3>
 
 						<div class="work__link">
@@ -492,7 +507,7 @@
 							<div class="contact__card">
 								<i class="bx bxl-whatsapp contact__card-icon"></i>
 								<h3 class="contact__card-title">WhatsApp</h3>
-								<span class="contact__card-data">0813-9516-1765</span>
+								<span class="contact__card-data">0877-7636-5692</span>
 	
 								<a href="https://api.whatsapp.com/send?phone=6281395161765" target="_blank" class="contact__button">
 									Write me <i class="bx bx-right-arrow-alt contact__button-icon"></i>
@@ -504,21 +519,23 @@
 					<div class="contact__content">
 						<h3 class="contact__title">Write me your project</h3>
 
-						<form action="" class="contact__form">
+						<form action="" class="contact__form" id="contact-form">
 							<div class="contact__form-div">
-								<label for="" class="contact__form-tag">Names</label>
-								<input type="text" placeholder="Insert your name" class="contact__form-input">
+								<label for="contact-name" class="contact__form-tag">Names</label>
+								<input type="text" id="contact-name" name="user_name" placeholder="Insert your name" class="contact__form-input" required>
 							</div>
 							<div class="contact__form-div">
-								<label for="" class="contact__form-tag">Mail</label>
-								<input type="text" placeholder="Insert your email" class="contact__form-input">
+								<label for="contact-email" class="contact__form-tag">Mail</label>
+								<input type="email" id="contact-email" name="user_email" placeholder="Insert your email" class="contact__form-input" required>
 							</div>
 							<div class="contact__form-div contact__form-area">
-								<label for="" class="contact__form-tag">Project</label>
-								<textarea name="" id="" cols="30" rows="10" placeholder="Write your project" class="contact__form-input"></textarea>
+								<label for="contact-message" class="contact__form-tag">Project</label>
+								<textarea id="contact-message" name="message" cols="30" rows="10" placeholder="Write your project" class="contact__form-input" required></textarea>
 							</div>
 
-							<button class="button">Send Message</button>
+							<p class="contact__form-status" id="contact-form-status"></p>
+
+							<button type="submit" class="button">Send Message</button>
 						</form>
 					</div>
 				</div>
@@ -549,16 +566,16 @@
 				</ul>
 
 				<span class="footer__copy">
-					&#169; 2024 Farkhan. All right reserved
+					&#169; <span id="footer-year"></span> Farkhan. All right reserved
 				</span>
 			</div>
         </footer>
 
+        <!--=============== EMAILJS ===============-->
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
         <!--=============== SCROLLREVEAL ===============-->
         <script src="assets/js/scrollreveal.min.js"></script>
-
-        <!--=============== SWIPER JS ===============-->
-        <script src="assets/js/swiper-bundle.min.js"></script>
 
         <!--=============== MIXITUP FILTER ===============-->
         <script src="assets/js/mixitup.min.js"></script>
