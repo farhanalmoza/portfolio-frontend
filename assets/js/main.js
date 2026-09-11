@@ -29,6 +29,26 @@ modalClose.forEach((mc) => {
     })
 })
 
+/*=============== RENDER WORKS ===============*/
+const workContainer = document.getElementById('work-container');
+
+workContainer.innerHTML = worksData.map((work) => `
+    <div class="work__card mix ${work.category}">
+        <img src="${work.image}" alt="${work.title} project screenshot" class="work__img">
+        <h3 class="work__title">${work.title}</h3>
+
+        <div class="work__link">
+            ${work.demoUrl ? `
+            <a href="${work.demoUrl}" class="work__button wb__demo" target="_blank">
+                Demo <i class="bx bx-right-arrow-alt .work__icon"></i>
+            </a>` : ''}
+            <a href="${work.githubUrl}" class="work__button wb__github" target="_blank">
+                Github <i class="bx bx-right-arrow-alt .work__icon"></i>
+            </a>
+        </div>
+    </div>
+`).join('');
+
 /*=============== MIXITUP FILTER PORTFOLIO ===============*/
 let mixerPortfolio = mixitup('.work__container', {
     selectors: {
